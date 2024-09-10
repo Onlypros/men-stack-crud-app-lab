@@ -3,10 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css" />
     <title>MEN stack CRUD app</title>
 </head>
 <body>
-    <h1>MEN Stack CRUD App - Songs</h1>
-    <a href="/songs">Browse Songs</a>
+    <%- include('./partials/nav') %>
+    <h1>MEN Stack CRUD App - Songs Libary</h1>
+    <div id="buttons">
+        <a id="index-add-new-songs-link" href="/songs/new">Add New Songs</a>
+    </div>
+    <br>
+    <br>
+    <a id="index-browse-song-libary" href="/songs">Browse Songs Libary</a>
 </body>
 </html>

@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css" />
     <title><%= song.songTitle %></title> <!--dynamic title based on song name-->
 </head>
 <body>
-    <a href="/songs">Browse Songs</a>
+    <%- include('../partials/nav') %>
     <h1>Song Info</h1>
     <p>Artist: <%= song.artist %></p>
     <p>Song title: <%= song.songTitle %></p>
@@ -19,9 +20,9 @@
     </form>
     <br>
     <!-- add edit page link here-->
-     <a href="/songs/<%= song._id %>/edit">Edit <%= song.songTitle %></a>
+     <a href="/songs/<%= song._id %>/edit">Edit Song: <%= song.songTitle %></a>
      <br>
      <br>
-     <a href="/songs">Back to Songs</a>
+     <a href="/songs">Back to Songs Libary</a>
 </body>
 </html>

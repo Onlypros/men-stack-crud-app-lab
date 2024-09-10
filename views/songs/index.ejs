@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css" />
     <title>Songs Index</title>
 </head>
 <body>
-    <a href="/songs/new">Add New Songs</a>
+    <%- include('../partials/nav') %>
+    
     <h1>All Songs</h1>
+    <a href="/songs/new">Add New Songs</a>
     <ul>
         <% songs.forEach(song => { %>
             <li>

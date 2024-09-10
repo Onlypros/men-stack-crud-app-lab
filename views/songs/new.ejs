@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css" />
     <title>Submit a Song</title>
 </head>
 <body>
-    <a href="/songs">Browse Songs</a>
+    <%- include('../partials/nav') %>
     <h1>Submit a Song</h1>
     <form action="/songs" method="POST">
         <label for="artist">Artist:</label>
@@ -24,6 +25,6 @@
         <button type="submit">Add Song</button>
     </form>
     <br>
-    <a href="/songs/">Back to Songs</a>
+    <a href="/songs/">Back to Songs Libary</a>
 </body>
 </html>

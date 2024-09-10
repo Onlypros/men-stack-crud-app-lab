@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap");
+
+/* all */
+h1 {
+    display: flex;
+
+}
+
+#buttons {
+
+}
+
+/* index.ejs */
+#index-add-new-songs-link {
+    display: flex;
+}
+
+#index-browse-song-libary {
+    display: flex;
+}
+
+/* songs folder */
+/* edit.ejs */
+
+
+/* index.ejs*/
+
+
+/* new.ejs */
+
+
+
+/* show.ejs */
+
+
+
+/* partials folder */
+/* nav.ejs */
+
+nav a {
+    display: flex;
+    font-size: 36px;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+
+
+
+

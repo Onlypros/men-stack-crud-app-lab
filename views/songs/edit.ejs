@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css" />
     <title>Edit Song</title>
 </head>
 <body>
-    <a href="/songs">Browse Songs</a>
+    <%- include('../partials/nav') %>
     <!-- update the header-->
     <h1>Edit Song: <%= song.songTitle %></h1>
     <form action="/songs/<%= song._id %>?_method=PUT" method="POST">
@@ -25,6 +26,7 @@
         <button type="submit">Update Song</button>
     </form>
     <br>
-    <a href="/songs/">Back to Songs</a>
+    <a href="/songs/">Back to Songs Libary</a>
 </body>
 </html>
+
